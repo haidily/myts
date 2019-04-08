@@ -1,7 +1,8 @@
 #coding = utf-8
 
-import tushare
+from sharetool import ShareTool
 
-df = tushare.get_stock_basics()
-
-print(df)
+if __name__ == "__main__":
+    print("start...")
+    share = ShareTool()
+    share.print_test()
